@@ -29,7 +29,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          ZIP_FILE="acg-faka-android-native-v0.3.0.zip"
+          ZIP_FILE="acg-faka-android-native-v0.3.1-http-test.zip"
           test -f "$ZIP_FILE" || { echo "Missing $ZIP_FILE in repository root"; exit 1; }
           mkdir -p extracted
           unzip -q -o "$ZIP_FILE" -d extracted
